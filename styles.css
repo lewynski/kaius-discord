@@ -16,7 +16,6 @@ body {
     font-family: 'VT323', monospace;
     color: var(--text-main);
     
-    /* Pixel Checkerboard Background */
     background-color: var(--bg-color);
     background-image: 
         linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
