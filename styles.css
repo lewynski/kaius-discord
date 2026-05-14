@@ -140,7 +140,6 @@ p {
     height: auto;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    /* This removes the blue box that sometimes appears around image links */
     outline: none; 
 }
 
