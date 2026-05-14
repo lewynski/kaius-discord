@@ -1,0 +1,126 @@
+:root {
+    --bg-color: #111111;
+    --card-bg: #2b2d31;
+    --card-inner: #111214;
+    --text-main: #f2f3f5;
+    --text-muted: #b5bac1;
+    --accent: #5865F2;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'VT323', monospace; /* Pixel Font */
+    color: var(--text-main);
+    
+    /* Pixel Checkerboard Background */
+    background-color: var(--bg-color);
+    background-image: 
+        linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
+        linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+.discord-card {
+    width: 340px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000; /* Chunky pixel border vibe */
+}
+
+.banner {
+    height: 120px;
+    background-color: var(--accent);
+    /* You can replace this with a pixel art banner image */
+    background-image: url('https://via.placeholder.com/340x120/5865F2/5865F2');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-section {
+    padding: 16px;
+    position: relative;
+}
+
+.avatar-container {
+    position: absolute;
+    top: -50px;
+    left: 16px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 6px solid var(--card-bg);
+    background-color: #000;
+    object-fit: cover;
+}
+
+.status {
+    width: 20px;
+    height: 20px;
+    background-color: #23a559; /* Discord online green */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    border: 4px solid var(--card-bg);
+}
+
+.user-info {
+    margin-top: 50px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.username {
+    margin: 2px 0 12px 0;
+    color: var(--text-muted);
+    font-size: 18px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #3f4147;
+    margin: 12px 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin: 12px 0 8px 0;
+}
+
+p {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.cog-button {
+    display: block;
+    background-color: var(--card-inner);
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #3f4147;
+    transition: background-color 0.2s;
+    font-size: 20px;
+}
+
+.cog-button:hover {
+    background-color: #3f4147;
+}
